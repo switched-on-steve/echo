@@ -1,5 +1,5 @@
 const http = require('http')
-const port = 3030
+const PORT = process.env.PORT || 3030;
 
 const requestHandler = (req, res) => {
   res.setHeader('Content-Type', 'text/html')
